@@ -6,6 +6,11 @@ class Sold < Formula
   head 'git@github.com:jmcken8/sold.git', :using => :git, :branch => "main"
   license "MIT"
 
+  bottle do
+    rebuild 1
+    sha256 cellar: :any, arm64_sonoma: "c8132684b28654eb48b5f5394b14ab2ce3f62ff9388588052be91ee716072af5"
+  end
+
 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
