@@ -7,6 +7,8 @@ class Sold < Formula
   license "MIT"
 
   bottle do
+    # sold--2.33.0-0.arm64_sonoma.bottle.1.tar.gz
+    root_url "https://github.com/jmcken8/sold/releases/download/2.33.0-0"
     rebuild 1
     sha256 cellar: :any, arm64_sonoma: "c8132684b28654eb48b5f5394b14ab2ce3f62ff9388588052be91ee716072af5"
   end
